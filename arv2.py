@@ -19,9 +19,7 @@ class Line(Parabola):
     def __init__(self, c0, c1):
         self.c0 = c0
         self.c1 = c1
-
-    def __call__(self, x):
-        return self.c0 + self.c1 * x 
+        self.c2 = 0
 
 if __name__ == "__main__":
     l1 = Line(1, 2)
